@@ -1,0 +1,15 @@
+$maxWidth: 1366px;
+$menuMobileHeight: 100vh;
+$menuDesktopHeight: 5rem;
+$menuBackgroundColor: #F0F0F0;
+$menuTextColor: #065A8F;
+$menuHoverColor: #81BD8E;
+$menuActiveColor: #99E4A9;
+$menuActiveHoverColor: #81BD8E;
+$footerBackgroundColor: #F0F0F0;
+
+
+$pagePaddingMobile: $menuDesktopHeight 3rem;
+$pagePaddingDesktop: $menuDesktopHeight calc((100% - $maxWidth) / 2);
+$footerPaddingMobile: 1rem 3rem;
+$footerPaddingDesktop: 1rem calc((100% - $maxWidth) / 2);
