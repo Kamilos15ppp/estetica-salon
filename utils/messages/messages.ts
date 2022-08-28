@@ -12,6 +12,13 @@ export const messages = {
 		telephoneText: 'Telefon',
 		telephoneNumber: '514-072-229',
 	},
+	voucher: {
+		header: 'Voucher',
+		text1: 'Szukasz oryginalnego upominku dla bliskiej Ci osoby? Nie musisz dłużej szukać. Voucher podarunkowy to świetna propozycja na różnorodne okazje. To również wspaniały pomysł na prezent w ostatniej chwili jak i praktyczne rozwiązanie dla wszystkich, którzy mają problem z wyborem prezentu. Salon Urody Estetica oferuje vouchery w następujących kategoriach',
+		listItem1: 'wartościowe-opiewające na konkretną kwotę',
+		listItem2: 'na konkretny zabieg wybrany z oferty',
+		text2: 'Spraw by bliska Ci osoba poczuła się wyjątkowo!',
+	},
 	gallery: {
 		header: 'Galeria',
 	},
