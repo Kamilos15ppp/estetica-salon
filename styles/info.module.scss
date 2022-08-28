@@ -1,0 +1,42 @@
+@import 'variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+
+  .header {
+    margin-bottom: $marginBottomMobile;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .text1 {
+    margin-bottom: $marginBottomMobile;
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+
+  .image {
+    margin-bottom: $marginBottomMobile;
+    border-radius: 2rem;
+  }
+
+  .text2 {
+    margin-bottom: $marginBottomMobile;
+    font-size: 1.7rem;
+    text-align: justify;
+  }
+
+  .telephoneContainer {
+    width: 100%;
+    font-size: 1.7rem;
+    text-align: right;
+
+    .telephone {
+      margin-left: 0.5rem;
+    }
+  }
+}

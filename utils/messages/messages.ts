@@ -5,6 +5,13 @@ export const messages = {
 		textContent2: 'Serdecznie zapraszam Państwa do zapoznania się z pełną ofertą usług.',
 		signature: 'Patrycja Bukowska',
 	},
+	info: {
+		header: 'Bezpłatna konsultacja kosmetologiczna',
+		text1: 'Bardzo wiele osób rezygnuje z konsultacji przed wizytą, uważając że ta jest tylko stratą ich cennego czasu. Pozwól, że obalę ten mit... Przeprowadzenie szczegółowego wywiadu obejmującego aktualny stan zdrowia, nawyki pielęgnacyjne, stosowane kosmetyki jest kluczem do sukcesu. Podczas bezpłatnej konsultacji dokonamy dokładnej analizy stanu Twojej skóry i jej problemów, ustalimy spersonalizowany plan zabiegowy, który pozwoli walczyć z defektami Twojej skóry i zachowa ją w doskonałej kondycji, a także dobierzemy odpowiednią pielęgnację domową dostosowaną do indywidualnych potrzeb Twojej skóry, abyś mogła prawidłowo dbać o nią również w domu.',
+		text2: 'Zadzwoń i umów się już dziś, zanim ktoś inny zajmie Twoje miejsce!',
+		telephoneText: 'Telefon',
+		telephoneNumber: '514-072-229',
+	},
 	gallery: {
 		header: 'Galeria',
 	},
