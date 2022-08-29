@@ -1,0 +1,62 @@
+@import 'variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.7rem;
+  text-align: center;
+
+  .header {
+    margin-bottom: $marginBottomMobile;
+    font-size: 2rem;
+  }
+
+  .subHeader {
+    margin-bottom: 1.5rem;
+  }
+
+  .reservationContainer {
+    margin-bottom: 3rem;
+
+    .reservation {
+      margin-bottom: 0.5rem;
+    }
+
+    .telephone {
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+
+    .email {
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .address {
+    margin-bottom: 3rem;
+  }
+
+  .openHoursWrapper {
+    margin-bottom: 3rem;
+
+    .openHoursHeader {
+      margin-bottom: 1rem;
+    }
+
+    .openHours {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .map {
+    height: 30rem;
+    width: 35rem;
+    border-radius: 2rem;
+    background-color: #888;
+  }
+}

@@ -1,3 +1,5 @@
+const telephoneNumber = '514-072-229';
+
 export const messages = {
 	homepage: {
 		header: 'Szanowni Państwo',
@@ -10,7 +12,7 @@ export const messages = {
 		text1: 'Bardzo wiele osób rezygnuje z konsultacji przed wizytą, uważając że ta jest tylko stratą ich cennego czasu. Pozwól, że obalę ten mit... Przeprowadzenie szczegółowego wywiadu obejmującego aktualny stan zdrowia, nawyki pielęgnacyjne, stosowane kosmetyki jest kluczem do sukcesu. Podczas bezpłatnej konsultacji dokonamy dokładnej analizy stanu Twojej skóry i jej problemów, ustalimy spersonalizowany plan zabiegowy, który pozwoli walczyć z defektami Twojej skóry i zachowa ją w doskonałej kondycji, a także dobierzemy odpowiednią pielęgnację domową dostosowaną do indywidualnych potrzeb Twojej skóry, abyś mogła prawidłowo dbać o nią również w domu.',
 		text2: 'Zadzwoń i umów się już dziś, zanim ktoś inny zajmie Twoje miejsce!',
 		telephoneText: 'Telefon',
-		telephoneNumber: '514-072-229',
+		telephoneNumber,
 	},
 	voucher: {
 		header: 'Voucher',
@@ -21,5 +23,18 @@ export const messages = {
 	},
 	gallery: {
 		header: 'Galeria',
+	},
+	contact: {
+		header: 'Informacje kontaktowe',
+		subHeader: 'Salon Urody Estetica Patrycja Bukowska',
+		reservation: 'Rezerwacja telefoniczna',
+		telephoneNumber,
+		emailText: 'e-mail',
+		emailAddress: 'info@studioestetica.pl',
+		address: 'Rokiciny Podhalańskie 29, 34-721 Raba Wyżna',
+		openHoursText: 'Godziny otwarcia',
+		openHours1: 'wtorek – czwartek 9.00-18.00',
+		openHours2: 'piątek 15.00-21.00',
+		openHours3: 'poniedziałek, sobota, niedziela – nieczynne',
 	},
 };
