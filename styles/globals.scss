@@ -1,8 +1,11 @@
+@import 'variables';
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 10px;
+  font-size: $fontSizeDefault;
+  font-family: $fontFamily;
 }
 
 a {
