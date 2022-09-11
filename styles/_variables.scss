@@ -11,13 +11,24 @@ $footerBackgroundColor: #F0F0F0;
 
 
 $fontSizeDefault: 10px;
+$fontSizeMobile: 1.7rem;
+$fontSizeTablet: 2.2rem;
+$fontSizeDesktop: 2.4rem;
+
+$headerFontSizeMobile: 2rem;
+$headerFontSizeTablet: 3rem;
+$headerFontSizeDesktop: 4rem;
+
 $fontFamily: 'Open Sans', sans-serif;
 $fontFamilyHeader: 'Bree Serif', serif;
 $fontFamilySignature: 'Satisfy', cursive;
 
 $marginBottomMobile: 2rem;
+$marginBottomTablet: 4rem;
+$marginBottomDesktop: 6rem;
 
 $pagePaddingMobile: $menuDesktopHeight 3rem;
-$pagePaddingDesktop: $menuDesktopHeight calc((100% - $maxWidth) / 2);
+$pagePaddingTablet: $menuDesktopHeight 6rem;
+$pagePaddingDesktop: $menuDesktopHeight calc((100% - $maxWidth) / 2 + 2rem);
 $footerPaddingMobile: 1rem 3rem;
 $footerPaddingDesktop: 1rem calc((100% - $maxWidth) / 2);
