@@ -5,38 +5,57 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
 
   .header {
     margin-bottom: $marginBottomMobile;
-    font-size: 2rem;
+    font-size: $headerFontSizeMobile;
     text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: $marginBottomTablet;
+      font-size: $headerFontSizeTablet;
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 1366px) {
+      margin-bottom: $marginBottomDesktop;
+      font-size: $headerFontSizeDesktop;
+    }
   }
 
   .text1 {
     margin-bottom: $marginBottomMobile;
-    font-size: 1.7rem;
     text-align: justify;
   }
 
   .image {
+    position: relative;
     margin-bottom: $marginBottomMobile;
     border-radius: 2rem;
+    width: 30rem;
+    height: 20rem;
+
+    @media (min-width: 768px) {
+      width: 60rem;
+      height: 40rem;
+    }
   }
 
   .text2 {
     margin-bottom: $marginBottomMobile;
-    font-size: 1.7rem;
     text-align: justify;
   }
 
   .telephoneContainer {
     width: 100%;
-    font-size: 1.7rem;
     text-align: right;
 
     .telephone {
       margin-left: 0.5rem;
+      text-decoration: underline;
     }
   }
 }
