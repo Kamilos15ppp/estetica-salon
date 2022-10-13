@@ -14,7 +14,7 @@ const Voucher: NextPage = () => {
 				{M.voucher.header}
 			</PageHeader>
 			<div className={styles.image}>
-				<Image src={img} alt={img.src.toString()} width={320} height={200}/>
+				<Image src={img} alt={img.src.toString()} layout="fill"/>
 			</div>
 			<div className={styles.text1Container}>
 				<p className={styles.text1}>
