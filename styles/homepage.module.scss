@@ -2,87 +2,79 @@
 
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  height: 100%;
+  flex-direction: column;
 
-  .header {
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+
+  .textContent {
     margin-bottom: $marginBottomMobile;
-    font-size: $headerFontSizeMobile;
-    text-align: center;
-
-    @media (min-width: 768px) {
-      margin-bottom: $marginBottomTablet;
-      font-size: $headerFontSizeTablet;
-    }
+    text-align: justify;
 
     @media (min-width: 1024px) {
-      margin-top: 2rem;
+      flex-basis: 50%;
+      margin-bottom: 0;
+      margin-right: 2rem;
     }
 
-    @media (min-width: 1366px) {
-      margin-bottom: $marginBottomDesktop;
-      font-size: $headerFontSizeDesktop;
+    .header {
+      margin-bottom: $marginBottomMobile;
+      font-size: $headerFontSizeMobile;
+      text-align: center;
+
+      @media (min-width: 768px) {
+        margin-bottom: $marginBottomTablet;
+        font-size: $headerFontSizeTablet;
+      }
+
+      @media (min-width: 1024px) {
+        margin-top: 2rem;
+      }
+
+      @media (min-width: 1366px) {
+        margin-bottom: $marginBottomDesktop;
+        font-size: $headerFontSizeDesktop;
+      }
+    }
+
+    .text1 {
+      margin-bottom: $marginBottomMobile;
+    }
+
+    .text2 {
+      margin-bottom: $marginBottomMobile;
+    }
+
+    .signature {
+      display: block;
+      padding-right: 2rem;
+      text-align: right;
+      font-style: italic;
+      font-family: $fontFamilySignature;
+      font-size: $fontSizeMobile + 0.5rem;
     }
   }
 
-  .innerContainer {
+  .image {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 30rem;
+    height: 45rem;
+
+    @media (min-width: 768px) {
+      width: 40rem;
+      height: 60rem;
+    }
 
     @media (min-width: 1024px) {
-      flex-direction: row;
-    }
-
-    .textContent {
-      margin-bottom: $marginBottomMobile;
-      text-align: justify;
-
-      @media (min-width: 1024px) {
-        flex-basis: 50%;
-        margin-bottom: 0;
-        margin-right: 2rem;
-      }
-
-      .text1 {
-        margin-bottom: $marginBottomMobile;
-      }
-
-      .text2 {
-        margin-bottom: $marginBottomMobile;
-      }
-
-      .signature {
-        display: block;
-        padding-right: 2rem;
-        text-align: right;
-        font-style: italic;
-        font-family: $fontFamilySignature;
-        font-size: $fontSizeMobile + 0.5rem;
-      }
-    }
-
-    .image {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 35rem;
-      height: 50rem;
-      border-radius: 2rem;
-
-      @media (min-width: 768px) {
-        width: 40rem;
-        height: 60rem;
-      }
-
-      @media (min-width: 1024px) {
-        width: 60rem;
-        height: 80rem;
-      }
+      width: 60rem;
+      height: 80rem;
     }
   }
 }
+
