@@ -1,15 +1,18 @@
 import { NextPage } from 'next';
-import { messages as M } from '../utils/messages';
 import Image from 'next/image';
+import { messages as M } from '../utils/messages';
+import PageHeader from '../components/PageHeader/PageHeader';
 
-import img from '../public/woman.jpg';
+import img from '../public/voucher.jpg';
 
 import styles from '../styles/voucher.module.scss';
 
 const Voucher: NextPage = () => {
 	return (
 		<div className={styles.container}>
-			<h6 className={styles.header}>{M.voucher.header}</h6>
+			<PageHeader>
+				{M.voucher.header}
+			</PageHeader>
 			<div className={styles.image}>
 				<Image src={img} alt={img.src.toString()} width={320} height={200}/>
 			</div>

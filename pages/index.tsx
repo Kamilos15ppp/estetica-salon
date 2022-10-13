@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { messages as M } from '../utils/messages';
+import PageHeader from '../components/PageHeader/PageHeader';
 
 import woman from '../public/woman.jpg';
 
@@ -10,7 +11,9 @@ const Home: NextPage = () => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.textContent}>
-				<h6 className={styles.header}>{M.homepage.header}</h6>
+				<PageHeader>
+					{M.homepage.header}
+				</PageHeader>
 				<p className={styles.text1}>{M.homepage.textContent1}</p>
 				<p className={styles.text2}>{M.homepage.textContent2}</p>
 				<span className={styles.signature}>{M.homepage.signature}</span>
