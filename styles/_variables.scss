@@ -29,6 +29,6 @@ $marginBottomDesktop: 6rem;
 
 $pagePaddingMobile: $menuDesktopHeight 3rem;
 $pagePaddingTablet: $menuDesktopHeight 6rem;
-$pagePaddingDesktop: $menuDesktopHeight calc((100% - $maxWidth) / 2 + 2rem);
+$pagePaddingDesktop: $menuDesktopHeight 9rem;
 $footerPaddingMobile: 1rem 3rem;
 $footerPaddingDesktop: 1rem calc((100% - $maxWidth) / 2);
