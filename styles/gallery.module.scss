@@ -5,22 +5,40 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 100%;
-
-  .header {
-    margin-bottom: $marginBottomMobile;
-    font-size: 2rem;
-  }
+  width: 100%;
 
   .galleryContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
 
     .image {
-      margin: 2rem 0;
+      position: relative;
+      margin: 2rem;
+      width: 25rem;
+      height: 35rem;
       border-radius: 2rem;
+      box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+
+      @media (min-width: 768px) {
+        width: 30rem;
+        height: 45rem;
+      }
+
+      @media (min-width: 1024px) {
+        margin: 3rem;
+      }
     }
   }
 }
