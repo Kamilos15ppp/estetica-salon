@@ -1,6 +1,7 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
 import { messages as M } from '../utils/messages';
+import PageHeader from '../components/PageHeader/PageHeader';
 
 import img from '../public/woman2.jpg';
 
@@ -9,7 +10,7 @@ import styles from '../styles/info.module.scss';
 const Info: NextPage = () => {
 	return (
 		<div className={styles.container}>
-			<h6 className={styles.header}>{M.info.header}</h6>
+			<PageHeader>{M.info.header}</PageHeader>
 			<p className={styles.text1}>{M.info.text1}</p>
 			<div className={styles.image}>
 				<Image src={img} alt={img.src.toString()} layout="fill"/>
