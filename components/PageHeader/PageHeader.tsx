@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from '../../styles/pageHeader.module.scss';
 
 interface Props {
@@ -7,9 +8,17 @@ interface Props {
 
 const PageHeader = ({ children }: Props) => {
 	return (
-		<h6 className={styles.header}>
+		<motion.h6
+			animate={{
+				y: ['-10rem', '0rem'],
+				transition: {
+					duration: .5,
+				},
+			}}
+			className={styles.header}
+		>
 			{children}
-		</h6>
+		</motion.h6>
 	);
 };
 
