@@ -8,6 +8,7 @@
   width: 100%;
   height: $footerMobileHeight;
   font-size: $fontSizeMobile - 0.2rem;
+  color: $footerFontColor;
   background-color: $footerBackgroundColor;
 
   @media (min-width: 768px) {
