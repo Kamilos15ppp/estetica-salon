@@ -24,6 +24,7 @@ const Home: NextPage = () => {
 						src={woman}
 						alt={M.homepage.signature}
 						layout="fill"
+						style={{ borderRadius: '2rem' }}
 					/>
 				</div>
 			</div>

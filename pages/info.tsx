@@ -13,7 +13,12 @@ const Info: NextPage = () => {
 			<PageHeader>{M.info.header}</PageHeader>
 			<p className={styles.text1}>{M.info.text1}</p>
 			<div className={styles.image}>
-				<Image src={img} alt={img.src.toString()} layout="fill"/>
+				<Image
+					src={img}
+					alt={img.src.toString()}
+					layout="fill"
+					style={{ borderRadius: '2rem' }}
+				/>
 			</div>
 			<p className={styles.text2}>{M.info.text2}</p>
 			<p className={styles.telephoneContainer}>

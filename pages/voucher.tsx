@@ -14,7 +14,12 @@ const Voucher: NextPage = () => {
 				{M.voucher.header}
 			</PageHeader>
 			<div className={styles.image}>
-				<Image src={img} alt={img.src.toString()} layout="fill"/>
+				<Image
+					src={img}
+					alt={img.src.toString()}
+					layout="fill"
+					style={{ borderRadius: '2rem' }}
+				/>
 			</div>
 			<div className={styles.text1Container}>
 				<p className={styles.text1}>
