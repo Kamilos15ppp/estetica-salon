@@ -10,20 +10,22 @@ import styles from '../styles/homepage.module.scss';
 const Home: NextPage = () => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.textContent}>
-				<PageHeader>
-					{M.homepage.header}
-				</PageHeader>
-				<p className={styles.text1}>{M.homepage.textContent1}</p>
-				<p className={styles.text2}>{M.homepage.textContent2}</p>
-				<span className={styles.signature}>{M.homepage.signature}</span>
-			</div>
-			<div className={styles.image}>
-				<Image
-					src={woman}
-					alt={M.homepage.signature}
-					layout="fill"
-				/>
+			<PageHeader>
+				{M.homepage.header}
+			</PageHeader>
+			<div className={styles.innerContainer}>
+				<div className={styles.textContent}>
+					<p className={styles.text1}>{M.homepage.textContent1}</p>
+					<p className={styles.text2}>{M.homepage.textContent2}</p>
+					<span className={styles.signature}>{M.homepage.signature}</span>
+				</div>
+				<div className={styles.image}>
+					<Image
+						src={woman}
+						alt={M.homepage.signature}
+						layout="fill"
+					/>
+				</div>
 			</div>
 		</div>
 	);
