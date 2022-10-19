@@ -1,9 +1,14 @@
 import styles from '../../styles/footer.module.scss';
+import React from 'react';
 
-const Footer = () => {
+interface Props {
+	children: React.ReactNode;
+}
+
+const Footer = ({ children }: Props) => {
 	return (
 		<footer className={styles.container}>
-			<p>Created by Kamil 2022</p>
+			<p>{children}</p>
 		</footer>
 	);
 };

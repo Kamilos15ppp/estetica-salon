@@ -5,18 +5,20 @@
   justify-content: center;
   padding: $pagePaddingMobile;
   width: 100%;
-  min-height: calc(100vh - $menuDesktopHeight);
+  min-height: calc(100vh - $footerMobileHeight);
   height: 100%;
   font-size: $fontSizeMobile;
   color: #444;
 
   @media (min-width: 768px) {
     padding: $pagePaddingTablet;
+    min-height: calc(100vh - $footerTabletHeight);
     font-size: $fontSizeTablet;
   }
 
   @media (min-width: 1366px) {
     padding: $pagePaddingDesktop;
+    min-height: calc(100vh - $menuDesktopHeight);
     font-size: $fontSizeDesktop;
   }
 }

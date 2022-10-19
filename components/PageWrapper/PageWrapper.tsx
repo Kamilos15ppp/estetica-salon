@@ -1,6 +1,11 @@
+import React from 'react';
 import styles from '../../styles/page.module.scss';
 
-const PageWrapper = ({children}: any) => {
+interface Props {
+	children: React.ReactNode;
+}
+
+const PageWrapper = ({ children }: Props) => {
 	return (
 		<main className={styles.pageWrapper}>
 			{children}

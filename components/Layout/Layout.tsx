@@ -1,9 +1,15 @@
+import React from 'react';
 import { Headers } from '../Headers';
 import { Navbar } from '../Navbar';
 import { PageWrapper } from '../PageWrapper';
 import { Footer } from '../Footer';
+import { messages as M } from '../../utils/messages';
 
-const Layout = ({children}: any) => {
+interface Props {
+	children: React.ReactNode;
+}
+
+const Layout = ({ children }: Props) => {
 	return (
 		<>
 			<Headers/>
@@ -11,7 +17,9 @@ const Layout = ({children}: any) => {
 			<PageWrapper>
 				{children}
 			</PageWrapper>
-			<Footer/>
+			<Footer>
+				{M.page.footer}
+			</Footer>
 		</>
 	);
 };

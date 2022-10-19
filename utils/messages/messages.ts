@@ -37,4 +37,7 @@ export const messages = {
 		openHours2: 'piątek 15.00-21.00',
 		openHours3: 'poniedziałek, sobota, niedziela – nieczynne',
 	},
+	page: {
+		footer: 'Estetica Patrycja Bukowska - all rights reserved',
+	},
 };
