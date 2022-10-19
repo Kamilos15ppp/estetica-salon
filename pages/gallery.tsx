@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import { messages as M } from '../utils/messages';
-import PageHeader from '../components/PageHeader/PageHeader';
-import PhotoGallery from '../components/PhotoGallery/PhotoGallery';
+import { PageHeader } from '../components/PageHeader';
+import { PhotoGallery } from '../components/PhotoGallery';
 
 import styles from '../styles/gallery.module.scss';
 

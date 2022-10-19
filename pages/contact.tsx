@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { messages as M } from '../utils/messages';
-import PageHeader from '../components/PageHeader/PageHeader';
-import IframeMap from '../components/IframeMap/IframeMap';
+import { PageHeader } from '../components/PageHeader';
+import { IframeMap } from '../components/IframeMap';
 
 import styles from '../styles/contact.module.scss';
 

@@ -5,7 +5,7 @@ const Headers = () => {
 		<Head>
 			<title>Salon Urody Estetica</title>
 			<meta name="description" content="Salon Urody Estetica"/>
-			<link rel="icon" href="/public/favicon.ico"/>
+			<link rel="icon" href="/favicon.ico"/>
 		</Head>
 	);
 };
