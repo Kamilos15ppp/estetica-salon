@@ -18,24 +18,24 @@
     }
 
     .textContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin-bottom: $marginBottomMobile;
       text-align: justify;
 
       @media (min-width: 1024px) {
-        flex-basis: 50%;
         margin-bottom: 0;
-        margin-right: 2rem;
       }
 
-      .text1 {
+      .text {
         margin-bottom: $marginBottomMobile;
-      }
-
-      .text2 {
-        margin-bottom: $marginBottomMobile;
+        width: 100%;
       }
 
       .signature {
+        place-self: flex-end;
         display: block;
         padding-right: 2rem;
         text-align: right;
@@ -51,6 +51,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-bottom: $marginBottomMobile;
       width: 30rem;
       height: 45rem;
       overflow: hidden;
