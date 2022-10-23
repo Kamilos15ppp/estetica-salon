@@ -1,8 +1,8 @@
-import React, { createRef, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { BsList } from 'react-icons/bs';
-import { Hrefs } from './constance';
+import { Href, Hrefs } from '../../utils/hrefs';
 
 import styles from '../../styles/navbar.module.scss';
 
@@ -13,7 +13,7 @@ const Navbar = () => {
 
 	const toggleMenu = () => setIsMenuToggled(!isMenuToggled);
 
-	const menuList = Hrefs.map((href) => (
+	const menuList = Hrefs.map((href: Href) => (
 		<li key={href.path} onClick={isMobileView ? toggleMenu : undefined}>
 			<Link href={href.path}>{href.text}</Link>
 		</li>
@@ -26,7 +26,7 @@ const Navbar = () => {
 		if (activeElement && activeElement.getAttribute('href') === pathname) {
 			activeElement.classList.add(styles.active);
 		}
-		
+
 		links.forEach((element) => {
 			if (element.classList.contains(styles.active)
 				&& element.getAttribute('href') !== pathname
