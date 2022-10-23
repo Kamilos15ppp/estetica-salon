@@ -8,7 +8,7 @@
   min-height: calc(100vh - $footerMobileHeight);
   height: 100%;
   font-size: $fontSizeMobile;
-  color: $pageFontColor;
+  color: $fontColorLight;
 
   @media (min-width: 768px) {
     padding: $pagePaddingTablet;
