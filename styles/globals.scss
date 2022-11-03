@@ -1,5 +1,20 @@
 @import 'variables';
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Bree Serif';
+  src: url('../fonts/Bree_Serif/BreeSerif-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Satisfy';
+  src: url('../fonts/Satisfy/Satisfy-Regular.ttf');
+}
+
 html,
 body {
   padding: 0;
