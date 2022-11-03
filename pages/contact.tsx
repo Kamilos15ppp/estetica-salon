@@ -13,7 +13,8 @@ const Contact: NextPage = () => {
 			</PageHeader>
 			<div className={styles.innerContainer}>
 				<div className={styles.info}>
-					<p className={styles.subHeader}>{M.contact.subHeader}</p>
+					<p className={styles.subHeader}>{M.contact.subHeader1}</p>
+					<p className={styles.subHeader}>{M.contact.subHeader2}</p>
 					<div className={styles.reservationContainer}>
 						<p className={styles.reservation}>{M.contact.reservation.toUpperCase()}:</p>
 						<p className={styles.telephone}><a href={`tel:${M.contact.telephoneNumber}`}>{M.contact.telephoneNumber}</a>
