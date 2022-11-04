@@ -31,26 +31,3 @@ export const Hrefs: Href[] = [
 		text: M.contact.pathText,
 	},
 ];
-
-export const PriceHrefs = [
-	{
-		path: M.price.subPaths.eyes,
-		text: M.price.text.eyes,
-	},
-	{
-		path: M.price.subPaths.hands,
-		text: M.price.text.hands,
-	},
-	{
-		path: M.price.subPaths.feet,
-		text: M.price.text.feet,
-	},
-	{
-		path: M.price.subPaths.face,
-		text: M.price.text.face,
-	},
-	{
-		path: M.price.subPaths.depilation,
-		text: M.price.text.depilation,
-	},
-];

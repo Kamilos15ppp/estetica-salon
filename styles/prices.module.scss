@@ -1,13 +1,64 @@
+@import 'variables';
+
 .container {
-  .tiles {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
+  .pricesContainer {
+    width: 100%;
 
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+    @media (min-width: 1024px) {
+      width: 75%;
+    }
+
+    .item {
+      margin: 3rem 0;
+
+      .header {
+        margin-bottom: 1rem;
+        font-size: $fontSizeMobile + 0.1rem;
+        text-align: center;
+
+        @media (min-width: 768px) {
+          font-size: $fontSizeTablet;
+        }
+      }
+
+      .innerItem {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.3rem;
+        padding: 0.2rem;
+        border-radius: 2rem;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.07);
+        }
+
+        .dot {
+          position: absolute;
+          top: 1rem;
+          left: -1.5rem;
+          width: 0.7rem;
+          height: 0.7rem;
+          background-color: #000;
+          border-radius: 2rem;
+
+        }
+
+        span {
+          margin: 0 0.3rem;
+        }
+
+        span + span + span {
+          font-weight: bold;
+        }
+      }
     }
   }
 }

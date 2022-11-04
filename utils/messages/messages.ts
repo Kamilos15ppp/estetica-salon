@@ -16,20 +16,6 @@ export const messages = {
 		path: '/prices',
 		pathText: 'Cennik',
 		header: 'Cennik',
-		subPaths: {
-			eyes: 'prices/eyes',
-			hands: 'prices/hands',
-			feet: 'prices/feet',
-			face: 'prices/face',
-			depilation: 'prices/depilation',
-		},
-		text: {
-			eyes: 'Oczy',
-			hands: 'Dłonie',
-			feet: 'Stopy',
-			face: 'Twarz',
-			depilation: 'Depilacja',
-		},
 	},
 	info: {
 		path: '/info',
