@@ -6,7 +6,7 @@ export const messages = {
 		pathText: 'O mnie',
 		header: 'Szanowni Państwo',
 		textContent1: {
-			part1: 'Pasja do tego co robię, zamiłowanie do kosmetyki i kosmetologii, doświadczenie oraz nieustanne poszerzanie swojej wiedzy i umiejętności sprawiły, że nadszedł moment, w którym mogę zaprosić Państwa do swojego gabinetu. Salon Urody Estetica to miejsce, w którym każdy będzie mógł się zrelaksować, poprawić swój wygląd i samopoczucie, to także przestrzeń dla osób, które cenią sobie komfort i profesjonalizm.',
+			part1: 'Pasja do tego co robię, zamiłowanie do kosmetyki i kosmetologii, doświadczenie oraz nieustanne poszerzanie swojej wiedzy i umiejętności sprawiły, że nadszedł moment, w którym mogę zaprosić Państwa do swojego gabinetu. Salon Kosmetyczny Estetica to miejsce, w którym każdy będzie mógł się zrelaksować, poprawić swój wygląd i samopoczucie, to także przestrzeń dla osób, które cenią sobie komfort i profesjonalizm.',
 			part2: 'Oferuję pełen zakres profesjonalnych zabiegów kosmetycznych i kosmetologicznych dobranych do indywidualnych potrzeb Klienta, dzięki czemu jestem w stanie sprostać oczekiwaniom najbardziej wymagających. Moją specjalnością zawodową, są spersonalizowane terapie trudnych i problematycznych cer oraz terapie łączone wspomagające naturalne procesy naprawcze skóry. Ponadto oferuję Państwu profesjonalne usługi z zakresu manicure, pedicure, upiększania okolicy oka, a także depilacji.',
 		},
 		textContent2: 'Serdecznie zapraszam Państwa do zapoznania się z pełną ofertą usług.',
@@ -30,7 +30,7 @@ export const messages = {
 		path: '/voucher',
 		pathText: 'Voucher',
 		header: 'Voucher',
-		text1: 'Szukasz oryginalnego upominku dla bliskiej Ci osoby? Nie musisz dłużej szukać. Voucher podarunkowy to świetna propozycja na różnorodne okazje. To również wspaniały pomysł na prezent w ostatniej chwili jak i praktyczne rozwiązanie dla wszystkich, którzy mają problem z wyborem prezentu. Salon Urody Estetica oferuje vouchery w następujących kategoriach',
+		text1: 'Szukasz oryginalnego upominku dla bliskiej Ci osoby? Nie musisz dłużej szukać. Voucher podarunkowy to świetna propozycja na różnorodne okazje. To również wspaniały pomysł na prezent w ostatniej chwili jak i praktyczne rozwiązanie dla wszystkich, którzy mają problem z wyborem prezentu. Salon Kosmetyczny Estetica oferuje vouchery w następujących kategoriach',
 		listItem1: 'wartościowe-opiewające na konkretną kwotę',
 		listItem2: 'na konkretny zabieg wybrany z oferty',
 		text2: 'Spraw by bliska Ci osoba poczuła się wyjątkowo!',

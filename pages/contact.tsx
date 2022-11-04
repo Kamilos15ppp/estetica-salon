@@ -1,7 +1,10 @@
 import type { NextPage } from 'next';
+import Image from 'next/image';
 import { messages as M } from '../utils/messages';
 import { PageHeader } from '../components/PageHeader';
 import { IframeMap } from '../components/IframeMap';
+
+import logo from '../public/estetica_logo.png';
 
 import styles from '../styles/contact.module.scss';
 
@@ -15,6 +18,15 @@ const Contact: NextPage = () => {
 				<div className={styles.info}>
 					<p className={styles.subHeader}>{M.contact.subHeader1}</p>
 					<p className={styles.subHeader}>{M.contact.subHeader2}</p>
+					<div className={styles.imageContainer}>
+						<div className={styles.image}>
+							<Image
+								src={logo}
+								alt="logo"
+								layout="fill"
+							/>
+						</div>
+					</div>
 					<div className={styles.reservationContainer}>
 						<p className={styles.reservation}>{M.contact.reservation.toUpperCase()}:</p>
 						<p className={styles.telephone}><a href={`tel:${M.contact.telephoneNumber}`}>{M.contact.telephoneNumber}</a>

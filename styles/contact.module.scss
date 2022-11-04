@@ -24,7 +24,21 @@
       }
 
       .subHeader {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        width: 100%;
+
+        .image {
+          position: relative;
+          width: 20rem;
+          height: 12rem;
+        }
       }
 
       .reservationContainer {
