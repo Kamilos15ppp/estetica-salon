@@ -1,6 +1,6 @@
 import { BsArrowUpShort } from 'react-icons/bs';
 
-import styles from '../../styles/arrowUp.module.scss';
+import styles from '../../styles/components/arrowUp.module.scss';
 
 const ArrowUp = () => {
 	const handleScrollUp = () => {

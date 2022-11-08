@@ -3,7 +3,7 @@ import { messages as M } from '../utils/messages';
 import { prices as P } from '../utils/prices';
 import { AnimationPageWrapper, PageHeader } from '../components';
 
-import styles from '../styles/prices.module.scss';
+import styles from '../styles/pages/prices.module.scss';
 
 const Prices: NextPage = () => {
 	const priceElements = P.map((item) => {

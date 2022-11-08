@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import img from '../../public/woman.jpg';
 
-import styles from '../../styles/gallery.module.scss';
+import styles from '../../styles/pages/gallery.module.scss';
 
 const images = [
 	{

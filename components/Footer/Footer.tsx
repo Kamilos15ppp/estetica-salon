@@ -1,5 +1,6 @@
-import styles from '../../styles/footer.module.scss';
 import React from 'react';
+
+import styles from '../../styles/components/footer.module.scss';
 
 interface Props {
 	children: React.ReactNode;

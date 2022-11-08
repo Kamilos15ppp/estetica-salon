@@ -1,4 +1,4 @@
-import styles from '../../styles/iframeMap.module.scss';
+import styles from '../../styles/components/iframeMap.module.scss';
 
 const IframeMap = () => {
 	return (

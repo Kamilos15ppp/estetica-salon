@@ -5,7 +5,7 @@ import { AnimationPageWrapper, IframeMap, PageHeader } from '../components';
 
 import logo from '../public/estetica_logo.png';
 
-import styles from '../styles/contact.module.scss';
+import styles from '../styles/pages/contact.module.scss';
 
 const Contact: NextPage = () => {
 	return (

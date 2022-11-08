@@ -5,7 +5,7 @@ import { AnimationPageWrapper, PageHeader } from '../components';
 
 import woman from '../public/woman.jpg';
 
-import styles from '../styles/homepage.module.scss';
+import styles from '../styles/pages/homepage.module.scss';
 
 const Home: NextPage = () => {
 	return (

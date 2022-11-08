@@ -5,7 +5,7 @@ import { AnimationPageWrapper, PageHeader } from '../components';
 
 import img from '../public/voucher.jpg';
 
-import styles from '../styles/voucher.module.scss';
+import styles from '../styles/pages/voucher.module.scss';
 
 const Voucher: NextPage = () => {
 	return (

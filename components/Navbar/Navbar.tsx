@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { BsList } from 'react-icons/bs';
 import { Href, Hrefs } from '../../utils/hrefs';
 
-import styles from '../../styles/navbar.module.scss';
+import styles from '../../styles/components/navbar.module.scss';
 
 const Navbar = () => {
 	const [isMobileView, setIsMobileView] = useState<boolean>(true);

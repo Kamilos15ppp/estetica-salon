@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '../../styles/pageHeader.module.scss';
+
+import styles from '../../styles/components/pageHeader.module.scss';
 
 interface Props {
 	children: React.ReactNode;
