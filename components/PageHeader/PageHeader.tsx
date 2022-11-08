@@ -13,6 +13,7 @@ const PageHeader = ({ children }: Props) => {
 				y: ['-10rem', '0rem'],
 				transition: {
 					duration: .5,
+					delay: .3,
 				},
 			}}
 			className={styles.header}

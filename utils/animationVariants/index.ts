@@ -1,0 +1,1 @@
+export { pageVariants } from './pageVariants';

@@ -9,6 +9,7 @@
   height: 100%;
   font-size: $fontSizeMobile;
   color: $fontColorLight;
+  overflow: hidden;
 
   @media (min-width: 768px) {
     padding: $pagePaddingTablet;

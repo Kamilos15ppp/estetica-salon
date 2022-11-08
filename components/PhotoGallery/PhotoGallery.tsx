@@ -40,7 +40,6 @@ const images = [
 const PhotoGallery = () => {
 	const galleryImgs = images.map((img) => (
 			<motion.div
-				animate={{ x: ['-100rem', '10rem', '0rem'], opacity: [0, 1], transition: { duration: .9 } }}
 				whileHover={{
 					boxShadow: '10px 10px 15px 0 rgba(0, 0, 0, 0.3)',
 					scale: 1.15,

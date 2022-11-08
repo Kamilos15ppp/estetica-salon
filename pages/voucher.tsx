@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import Image from 'next/image';
 import { messages as M } from '../utils/messages';
 import { PageHeader } from '../components/PageHeader';
+import { AnimationPageWrapper } from '../components/AnimationPageWrapper';
 
 import img from '../public/voucher.jpg';
 
@@ -9,7 +10,7 @@ import styles from '../styles/voucher.module.scss';
 
 const Voucher: NextPage = () => {
 	return (
-		<div className={styles.container}>
+		<AnimationPageWrapper className={styles.container}>
 			<PageHeader>
 				{M.voucher.header}
 			</PageHeader>
@@ -31,7 +32,7 @@ const Voucher: NextPage = () => {
 				</ul>
 			</div>
 			<p className={styles.text2}>{M.voucher.text2}</p>
-		</div>
+		</AnimationPageWrapper>
 	);
 };
 

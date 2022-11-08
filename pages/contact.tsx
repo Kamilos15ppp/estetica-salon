@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { messages as M } from '../utils/messages';
 import { PageHeader } from '../components/PageHeader';
 import { IframeMap } from '../components/IframeMap';
+import { AnimationPageWrapper } from '../components/AnimationPageWrapper';
 
 import logo from '../public/estetica_logo.png';
 
@@ -10,7 +11,7 @@ import styles from '../styles/contact.module.scss';
 
 const Contact: NextPage = () => {
 	return (
-		<div className={styles.container}>
+		<AnimationPageWrapper className={styles.container}>
 			<PageHeader>
 				{M.contact.header}
 			</PageHeader>
@@ -44,7 +45,7 @@ const Contact: NextPage = () => {
 				</div>
 				<IframeMap/>
 			</div>
-		</div>
+		</AnimationPageWrapper>
 	);
 };
 

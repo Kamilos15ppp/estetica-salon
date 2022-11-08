@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import { messages as M } from '../utils/messages';
 import { PageHeader } from '../components/PageHeader';
+import { AnimationPageWrapper } from '../components/AnimationPageWrapper';
 
 import woman from '../public/woman.jpg';
 
@@ -9,7 +10,7 @@ import styles from '../styles/homepage.module.scss';
 
 const Home: NextPage = () => {
 	return (
-		<div className={styles.container}>
+		<AnimationPageWrapper className={styles.container}>
 			<PageHeader>
 				{M.homepage.header}
 			</PageHeader>
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
 					<span className={styles.signature}>{M.homepage.signature}</span>
 				</div>
 			</div>
-		</div>
+		</AnimationPageWrapper>
 	);
 };
 

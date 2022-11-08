@@ -2,6 +2,7 @@ import { NextPage } from 'next';
 import { PageHeader } from '../components/PageHeader';
 import { messages as M } from '../utils/messages';
 import { prices as P } from '../utils/prices';
+import { AnimationPageWrapper } from '../components/AnimationPageWrapper';
 
 import styles from '../styles/prices.module.scss';
 
@@ -25,14 +26,14 @@ const Prices: NextPage = () => {
 	});
 
 	return (
-		<div className={styles.container}>
+		<AnimationPageWrapper className={styles.container}>
 			<PageHeader>
 				{M.price.header}
 			</PageHeader>
 			<div className={styles.pricesContainer}>
 				{priceElements}
 			</div>
-		</div>
+		</AnimationPageWrapper>
 	);
 };
 
