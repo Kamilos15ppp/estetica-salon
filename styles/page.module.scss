@@ -1,6 +1,7 @@
 @import 'variables';
 
 .pageWrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: $pagePaddingMobile;
