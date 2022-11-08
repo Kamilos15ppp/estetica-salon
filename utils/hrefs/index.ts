@@ -1,1 +1,1 @@
-export { type Href, Hrefs, PriceHrefs } from './hrefs';
+export { type Href, Hrefs } from './hrefs';
