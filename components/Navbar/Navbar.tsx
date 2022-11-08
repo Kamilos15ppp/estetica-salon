@@ -38,7 +38,7 @@ const Navbar = () => {
 
 	useEffect(() => {
 		const handleViewport = () => {
-			if (window.screenX < 1024) {
+			if (window.innerWidth < 1024) {
 				setIsMobileView(true);
 			} else {
 				setIsMobileView(false);
