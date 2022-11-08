@@ -1,9 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { messages as M } from '../utils/messages';
-import { PageHeader } from '../components/PageHeader';
-import { IframeMap } from '../components/IframeMap';
-import { AnimationPageWrapper } from '../components/AnimationPageWrapper';
+import { AnimationPageWrapper, IframeMap, PageHeader } from '../components';
 
 import logo from '../public/estetica_logo.png';
 

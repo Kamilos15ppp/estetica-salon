@@ -1,8 +1,7 @@
 import { NextPage } from 'next';
-import { PageHeader } from '../components/PageHeader';
 import { messages as M } from '../utils/messages';
 import { prices as P } from '../utils/prices';
-import { AnimationPageWrapper } from '../components/AnimationPageWrapper';
+import { AnimationPageWrapper, PageHeader } from '../components';
 
 import styles from '../styles/prices.module.scss';
 

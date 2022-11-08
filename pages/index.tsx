@@ -1,8 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import { messages as M } from '../utils/messages';
-import { PageHeader } from '../components/PageHeader';
-import { AnimationPageWrapper } from '../components/AnimationPageWrapper';
+import { AnimationPageWrapper, PageHeader } from '../components';
 
 import woman from '../public/woman.jpg';
 
