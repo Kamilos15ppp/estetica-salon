@@ -12,13 +12,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 2rem;
-    right: 2rem;
-    width: 4rem;
-    height: 4rem;
+    bottom: 4rem;
+    right: 2.5rem;
+    width: 5rem;
+    height: 5rem;
     z-index: 99;
     font-size: 4rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     background-color: $primary400transparent;
     transform: rotate(0deg);
     transition: top 0.3s ease-in-out, transform 0.4s linear 0.3s;
