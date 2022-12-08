@@ -1,1 +1,1 @@
-export { pageVariants } from './pageVariants';
+export { animationVariants } from './animationVariants';

@@ -6,6 +6,7 @@ import {
   BsArrowRightSquareFill,
   BsXCircleFill,
 } from 'react-icons/bs';
+import { animationVariants } from '../../utils/animationVariants';
 
 import styles from '../../styles/components/imageViewer.module.scss';
 
@@ -30,7 +31,12 @@ const ImageViewer = ({
   children,
 }: Props) => {
   const Portal = (
-    <motion.div className={styles.container} animate={{ opacity: [0, 1] }}>
+    <motion.div
+      initial='initial'
+      animate='enter'
+      variants={animationVariants.imageViewer}
+      className={styles.container}
+    >
       <div className={styles.imageContainer}>{children}</div>
       <div className={styles.btnContainer}>
         <span
@@ -52,9 +58,9 @@ const ImageViewer = ({
     </motion.div>
   );
 
-  return (
-    mounted && createPortal(Portal, document.querySelector('#imagesPortal')!)
-  );
+  return mounted
+    ? createPortal(Portal, document.querySelector('#imagesPortal')!)
+    : null;
 };
 
 export default ImageViewer;
