@@ -1,0 +1,75 @@
+@import 'styles/variables';
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem 0rem 1rem;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  background-color: $secondary600;
+  z-index: 100;
+
+  .imageContainer {
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 30%;
+
+    @media (orientation: landscape) {
+      width: 70%;
+      height: 80%;
+    }
+
+    @media (min-width: 768px) {
+      height: 50%;
+    }
+
+    @media (min-width: 1024px) {
+      width: 85%;
+      height: 60%;
+    }
+
+    @media (min-width: 1366px) {
+      width: 75%;
+      max-width: 130rem;
+      height: 65%;
+    }
+  }
+
+  .btnContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    @media (min-width: 768px) {
+      justify-content: space-evenly;
+    }
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem;
+      height: 5rem;
+      font-size: $fontSizeDesktop + 2rem;
+      font-weight: bold;
+      opacity: 0.6;
+      cursor: pointer;
+
+      &.disabled {
+        opacity: 0.2;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

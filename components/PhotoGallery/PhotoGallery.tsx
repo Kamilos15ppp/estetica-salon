@@ -1,69 +1,42 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { motion } from 'framer-motion';
-import img from '../../public/woman.jpg';
 
 import styles from '../../styles/pages/gallery.module.scss';
+interface Props {
+  images: { id: number; src: StaticImageData; alt: string }[];
+  openImageViewer: () => void;
+  setImage: (id: number) => void;
+}
 
-const images = [
-	{
-		id: 1,
-		src: img,
-		alt: img.src.toString(),
-	},
-	{
-		id: 2,
-		src: img,
-		alt: img.src.toString(),
-	},
-	{
-		id: 3,
-		src: img,
-		alt: img.src.toString(),
-	},
-	{
-		id: 4,
-		src: img,
-		alt: img.src.toString(),
-	},
-	{
-		id: 5,
-		src: img,
-		alt: img.src.toString(),
-	},
-	{
-		id: 6,
-		src: img,
-		alt: img.src.toString(),
-	},
-];
+const PhotoGallery = ({ images, openImageViewer, setImage }: Props) => {
+  const handleSelectImg = (id: number) => {
+    setImage(id);
+    openImageViewer();
+  };
 
-const PhotoGallery = () => {
-	const galleryImgs = images.map((img) => (
-			<motion.div
-				whileHover={{
-					boxShadow: '10px 10px 15px 0 rgba(0, 0, 0, 0.3)',
-					scale: 1.15,
-					transition: {
-						duration: .3,
-					},
-				}}
-				className={styles.image}
-				key={img.id}>
-				<Image
-					src={img.src}
-					alt={img.alt}
-					layout="fill"
-					style={{ borderRadius: '2rem' }}
-				/>
-			</motion.div>
-		),
-	);
+  const galleryImgs = images.map((img) => (
+    <motion.div
+      whileHover={{
+        boxShadow: '10px 10px 15px 0 rgba(0, 0, 0, 0.3)',
+        scale: 1.15,
+        transition: {
+          duration: 0.3,
+        },
+      }}
+      className={styles.image}
+      key={img.id}
+      onClick={() => handleSelectImg(img.id)}
+    >
+      <Image
+        src={img.src}
+        alt={img.alt}
+        layout='fill'
+        style={{ borderRadius: '2rem' }}
+      />
+    </motion.div>
+  ));
 
-	return (
-		<div className={styles.galleryContainer}>
-			{galleryImgs}
-		</div>
-	);
+  return <div className={styles.galleryContainer}>{galleryImgs}</div>;
 };
 
 export default PhotoGallery;
