@@ -52,19 +52,23 @@ const images = [
 ];
 
 const Gallery: NextPage = () => {
-  const [currImg, setCurrImg] = useState<number>(1);
-  const [mounted, setMounted] = useState<boolean>(false);
-  const [disabledBtns, setDisabledBtns] = useState<{
-    prevBtn: boolean;
-    nextBtn: boolean;
-  }>({ prevBtn: true, nextBtn: false });
+  const [currImg, setCurrImg] = useState(1);
+  const [mounted, setMounted] = useState(false);
+  const [disabledBtns, setDisabledBtns] = useState({
+    prevBtn: true,
+    nextBtn: false,
+  });
 
   const openImageViewer = () => setMounted(true);
+
   const closeImageViewer = () => setMounted(false);
+
   const prevImage = () =>
     setCurrImg((prev) => (prev - 1 < 1 ? prev : prev - 1));
+
   const nextImage = () =>
     setCurrImg((prev) => (prev + 1 > images.length ? prev : prev + 1));
+
   const setImage = (id: number) => setCurrImg(id);
 
   useEffect(() => {

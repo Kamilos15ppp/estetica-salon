@@ -14,7 +14,7 @@ const PhotoGallery = ({ images, openImageViewer, setImage }: Props) => {
     openImageViewer();
   };
 
-  const galleryImgs = images.map((img) => (
+  const galleryImgs = images.map(({ id, src, alt }) => (
     <motion.div
       whileHover={{
         boxShadow: '10px 10px 15px 0 rgba(0, 0, 0, 0.3)',
@@ -24,12 +24,12 @@ const PhotoGallery = ({ images, openImageViewer, setImage }: Props) => {
         },
       }}
       className={styles.image}
-      key={img.id}
-      onClick={() => handleSelectImg(img.id)}
+      key={id}
+      onClick={() => handleSelectImg(id)}
     >
       <Image
-        src={img.src}
-        alt={img.alt}
+        src={src}
+        alt={alt}
         layout='fill'
         style={{ borderRadius: '2rem' }}
       />
