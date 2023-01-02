@@ -19,6 +19,7 @@ interface Props {
     prevBtn: boolean;
     nextBtn: boolean;
   };
+  isPortrait: boolean;
   children: React.ReactNode;
 }
 
@@ -28,6 +29,7 @@ const ImageViewer = ({
   prevImage,
   nextImage,
   disabledBtns: { prevBtn, nextBtn },
+  isPortrait,
   children,
 }: Props) => {
   const Portal = (
@@ -37,7 +39,13 @@ const ImageViewer = ({
       variants={animationVariants.imageViewer}
       className={styles.container}
     >
-      <div className={styles.imageContainer}>{children}</div>
+      <div
+        className={`${styles.imageContainer} ${
+          isPortrait ? styles.portrait : styles.landscape
+        }`}
+      >
+        {children}
+      </div>
       <div className={styles.btnContainer}>
         <span
           className={prevBtn ? styles.disabled : ''}

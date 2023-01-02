@@ -10,36 +10,49 @@
   .galleryContainer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: auto;
 
     @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: auto;
     }
 
     @media (min-width: 1366px) {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: auto;
     }
 
     .image {
       position: relative;
       margin: 2rem;
-      width: 35rem;
-      height: 25rem;
       border-radius: 2rem;
       box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.2);
       overflow: hidden;
+      cursor: pointer;
+      place-self: center;
 
-      @media (min-width: 1024px) {
-        width: 35rem;
-        height: 25rem;
+      &.portrait {
+        width: 28rem;
+        height: 38rem;
+
+        @media (min-width: 1024px) {
+          width: 32rem;
+          height: 42rem;
+        }
+      }
+
+      &.landscape {
+        width: 32rem;
+        height: 22rem;
+
+        @media (min-width: 1024px) {
+          width: 34rem;
+          height: 24rem;
+        }
       }
 
       @media (min-width: 1366px) {
         margin: 3rem;
-        width: 55rem;
-        height: 40rem;
       }
     }
   }
