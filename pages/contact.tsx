@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import { NextPage } from 'next';
 import Image from 'next/image';
 import { messages as M } from '../utils/messages';
 import { AnimationPageWrapper, IframeMap, PageHeader } from '../components';

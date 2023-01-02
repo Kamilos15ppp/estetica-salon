@@ -15,7 +15,7 @@ const Info: NextPage = () => {
       <div className={styles.image}>
         <Image
           src={img}
-          alt={img.src.toString()}
+          alt='woman'
           layout='fill'
           style={{ borderRadius: '2rem' }}
         />
