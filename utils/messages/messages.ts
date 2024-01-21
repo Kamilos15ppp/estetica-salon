@@ -61,6 +61,97 @@ export const messages = {
     openHours2: 'piątek 15.00-21.00',
     openHours3: 'poniedziałek, sobota, niedziela – nieczynne',
   },
+  therapy: {
+    path: '/therapy',
+    pathText: 'Terapie',
+    subPaths: {
+      path1: '/therapy1',
+      path2: '/therapy2',
+    },
+    header: 'Terapie',
+    subHeader1: 'Terapie lecznicze dla skór trądzikowych',
+    subHeader2: 'Terapie na trądzik różowaty',
+    content: {
+      therapy1: {
+        text: [
+          'Trądzik to choroba skóry, której jedną z głównych przyczyn jest wydzielanie się zbyt dużej ilości sebum, czyli łoju. Sebum wydostaje się na powierzchnię naszej skóry przez gruczoły łojowe. Nadmiar łoju zapycha dostęp do kanalików, które prowadzą do gruczołów a to prowadzi do powstania na skórze niezapalnych zmian-zaskórników.',
+
+          'Taki zaskórnik stwarza idealne środowisko dla rozwoju bakterii, których nadmiar z kolei prowadzi do powstania stanu zapalnego.',
+
+          'Trądzik może towarzyszyć okresowi dojrzewania, jego przyczyną jest wówczas nadmierne pobudzenie gruczołów łojowych przez hormony, ale coraz częściej dotyka także osoby dorosłe (acne tarda).',
+
+          'Zmagania z trądzikiem mogą być bardzo trudne i długotrwałe, dlatego tak ważne jest ustalenie właściwej przyczyny jego występowania.',
+
+          'Trądzik to choroba przewlekła, której terapia wymaga poświęcenia czasu na regularną pielęgnację kosmetologiczną w gabinecie,wspomaganą przez odpowiednio dobraną pielęgnację domową z użyciem kosmeceutyków, dobranych właściwie do potrzeb Twojej skóry!',
+
+          'Coraz częściej Klientami mojego gabinetu są osoby z cerami trądzikowymi, które nie potrafią poradzić sobie z tym problemem, nie radzą sobie ze swoją skórą, a także przez nieodpowiednią pielęgnację często sami przyczyniają się do pogorszenia jej stanu.',
+
+          'Bardzo często podczas rozmowy z nimi dowiaduje się, że przez długi czas przyjmowały one leki przepisane przez dermatologa podczas zaledwie kilkuminutowej wizyty w gabinecie dermatologicznym a sam dobór maści czy tabletek był jedną wielką loterią.',
+
+          'W przeciągu paru minut nie ma możliwości dokonania prawidłowej diagnozy skóry z problemem a dermatolog nie jest wtedy cudotwórcą. Nie wspominając już o pielęgnacji, która na tym etapie jest po prostu pomijana. Zlecenie badań również jest nadal lekceważone.',
+
+          'Niestety tak wygląda to w rzeczywistości. To przykre, nie uważasz?',
+
+          'Dlatego w moim gabinecie działamy zupełnie inaczej. Podstawą jest rozpoznanie przyczyn problemu a potem prowadzenie moich klientów w drodze po zdrową skórę.',
+
+          'Jeśli borykasz się z problemem trądziku i zmianami skórnymi, zapraszam na konsultacje do mojego gabinetu, gdzie dokonamy odpowiedniej diagnozy Twojej skóry i ustalimy terapie leczniczą dobraną do stanu Twojej cery.',
+
+          'Świadoma pielęgnacja i odpowiednia diagnostyka to klucz do sukcesu w niwelowaniu trądziku.',
+        ],
+        scheme: {
+          header: 'Jak przebiega terapia przeciwtrądzikowa w gabinecie?',
+          steps: [
+            'Konsultacja kosmetologiczna - wywiad z Klientem',
+            'Analiza skóry',
+            'Ustalenie odpowiedniej terapii leczniczej i planu zabiegowego dobranych indywidualnie do potrzeb skóry Klienta',
+            'Dobranie kosmetyków do pielęgnacji skóry w domu',
+            'Systematyczność (regularne zabiegi i pielęgnacja domowa)',
+          ],
+          step: 'Krok',
+        },
+        effects: {
+          header:
+            'Jakich efektów mogę się spodziewać po terapii przeciwtrądzikowej?',
+        },
+      },
+      therapy2: {
+        text: [
+          'Niewielka ilość osób zdaje sobie sprawę że gdy mówimy o trądziku różowatym mamy do czynienia z choroba o podłożu zapalnym. I dlatego wymaga on leczenia.',
+
+          'Skóra objęta trądzikiem różowatym jest bardzo trudna do pielęgnacji i w związku z tym często poprzez stosowanie nieodpowiednich preparatów jest podrażniana, a w efekcie zaczerwieniona i piekąca.',
+
+          'Nie oznacza to jednak że trzeba rezygnować z zabiegów kosmetycznych. To właśnie odpowiednio dobrana pielęgnacja gabinetowa stanowiąca terapię leczniczą,dieta a także celowane i prawidłowo dobrane preparaty do pielęgnacji skóry w domu, są w stanie polepszyć kondycję skóry oraz wyciszyć zmiany.',
+
+          'Choroba dotyka przede wszystkim ludzi między 25, a 50 rokiem życia i częściej występuje u kobiet.',
+
+          'Zmiany w trądziku różowatym umiejscowione są na czole, policzkach, grzbiecie nosa oraz na skórze szyi i dekoltu.',
+
+          'Choroba ma kilka stadiów:',
+
+          'Jak dotąd nie wynaleziono jeszcze metody która pozwala na całkowite pozbycie się trądziku różowatego ale należy pamiętać, że im szybciej poznamy diagnozę tym większe są szanse na powodzenie w leczeniu tej choroby.',
+
+          'W moim gabinecie prawidłowo przeprowadzona diagnoza skóry oraz wywiad z Klientem to podstawa aby terapia przyniosła jak najlepszy efekt. Jest to niezbędne, aby leczenie trądziku różowatego było skuteczne!',
+        ],
+        list: [
+          'stadium przedtrądzikowe - przemijający rumień, określany jako "cera naczyniowa"',
+          'stadium pierwsze - gwałtowne zaczerwienienia skóry pod wpływem zmian temperatury, emocje. Naczynia krwionośne rozszerzają się, pojawia się uczucie pieczenia, swędzenia i gorąca które ustępuje samoistnie po kilku minutach',
+          'stadium drugie - zmiany rumieniowe na skórze utrwalają, tworzą się zlewne rumienie i powstają teleangiektazje',
+          'stadium trzecie - na rumienie skórne nakładają się krosty i grudki, występuje przewlekły obrzęk(często towarzyszą temu zmiany o charakterze zapalenia spojówek czy rogówki)',
+          'stadium czwarte - tutaj mówimy już o przeroście tkanki łącznej twarzy,najczęściej nosa,tworzy się efekt ,,słoniowatego nosa’’ i występują na nim charakterystyczne grudki. O ile wszystkie pozostałe stadia choroby dotyczyły obu płci,tak w tym przypadku to występuje prawie wyłącznie u mężczyzn.',
+        ],
+        scheme: {
+          header: 'Jak przebiega terapia przeciwtrądzikowa w gabinecie?',
+          steps: [
+            'Konsultacja kosmetologiczna - wywiad z Klientem',
+            'Analiza skóry',
+            'Ustalenie odpowiedniej terapii leczniczej i planu zabiegowego dobranych indywidualnie do potrzeb skóry Klienta',
+            'Dobranie kosmetyków do pielęgnacji skóry w domu',
+            'Systematyczność (regularne zabiegi i pielęgnacja domowa)',
+          ],
+        },
+      },
+    },
+  },
   page: {
     footer: 'Estetica Patrycja Bukowska - all rights reserved',
   },

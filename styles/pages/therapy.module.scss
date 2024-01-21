@@ -1,0 +1,57 @@
+@import 'styles/variables';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .header {
+    margin-bottom: $marginBottomMobile;
+    font-size: $headerFontSizeMobile;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      margin-bottom: $marginBottomTablet;
+      font-size: $headerFontSizeTablet;
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: 2rem;
+    }
+
+    @media (min-width: 1366px) {
+      margin-bottom: $marginBottomDesktop;
+      font-size: $headerFontSizeDesktop;
+    }
+  }
+
+  .tileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 18rem;
+    height: 14rem;
+    text-align: center;
+    background-color: $tertiary500transparent;
+    cursor: pointer;
+
+    @media (min-width: 768px) {
+      width: 22rem;
+      height: 18rem;
+    }
+  }
+}

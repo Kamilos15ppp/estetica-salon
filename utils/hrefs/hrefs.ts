@@ -19,6 +19,10 @@ export const Hrefs: Href[] = [
     text: M.info.pathText,
   },
   {
+    path: M.therapy.path,
+    text: M.therapy.pathText,
+  },
+  {
     path: M.voucher.path,
     text: M.voucher.pathText,
   },
