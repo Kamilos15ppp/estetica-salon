@@ -1,6 +1,9 @@
+import Image from 'next/image';
 import { NextPage } from 'next';
 import { messages as M } from '../utils/messages';
-import { AcneTherapy, AnimationPageWrapper, PageHeader } from '../components';
+import { AnimationPageWrapper, PageHeader, TherapyScheme } from '../components';
+
+import img from '../public/therapy2.jpeg';
 
 import styles from '../styles/pages/therapy2.module.scss';
 
@@ -25,7 +28,11 @@ const textContent = TextArray.map((el: string, index) => {
     );
   } else {
     if (index === TextArray.length - 3) {
-      return <ul className={styles.list}>{list}</ul>;
+      return (
+        <ul key={el.slice(0, 20)} className={styles.list}>
+          {list}
+        </ul>
+      );
     } else {
       return (
         <p key={el.slice(0, 20)} className={styles.paragraph}>
@@ -41,7 +48,10 @@ const Therapy2: NextPage = () => {
     <AnimationPageWrapper className={styles.container}>
       <PageHeader>{M.therapy.subHeader2}</PageHeader>
       <div className={styles.textContainer}>{textContent}</div>
-      <AcneTherapy />
+      <TherapyScheme />
+      <div>
+        <Image src={img} alt='Effects' style={{ borderRadius: '2rem' }} />
+      </div>
     </AnimationPageWrapper>
   );
 };
