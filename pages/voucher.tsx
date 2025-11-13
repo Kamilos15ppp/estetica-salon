@@ -15,7 +15,7 @@ const Voucher: NextPage = () => {
         <Image
           src={img}
           alt='voucher'
-          layout='fill'
+          fill={true}
           style={{ borderRadius: '2rem' }}
         />
       </div>

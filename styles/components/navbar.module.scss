@@ -1,4 +1,4 @@
-@import 'styles/variables';
+@use '../variables' as *;
 
 .container {
   display: flex;
@@ -21,7 +21,9 @@
     border-radius: 1.5rem;
     background-color: $primary400transparent;
     transform: rotate(0deg);
-    transition: top 0.3s ease-in-out, transform 0.4s linear 0.3s;
+    transition:
+      top 0.3s ease-in-out,
+      transform 0.4s linear 0.3s;
     cursor: pointer;
 
     @media (min-width: 1024px) {

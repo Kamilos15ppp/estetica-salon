@@ -113,7 +113,7 @@ const Gallery: NextPage = () => {
         <Image
           src={images[currImg - 1].src}
           alt={images[currImg - 1].alt}
-          layout='fill'
+          fill={true}
           style={{ borderRadius: '2rem' }}
         />
       </ImageViewer>

@@ -17,7 +17,7 @@ const Contact: NextPage = () => {
           <p className={styles.subHeader}>{M.contact.subHeader2}</p>
           <div className={styles.imageContainer}>
             <div className={styles.image}>
-              <Image src={logo} alt='logo' layout='fill' />
+              <Image src={logo} alt='logo' fill={true} />
             </div>
           </div>
           <div className={styles.reservationContainer}>

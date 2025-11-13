@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 
   .header {
     margin-bottom: $marginBottomMobile;
@@ -26,38 +27,31 @@
     }
   }
 
-  .text1 {
-    margin-bottom: $marginBottomMobile;
-    text-align: justify;
+  .tileContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
 
-  .image {
-    position: relative;
-    margin-bottom: $marginBottomMobile;
+  .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    padding: 1rem;
     border-radius: 2rem;
-    width: 30rem;
-    height: 20rem;
-    overflow: hidden;
+    width: 18rem;
+    height: 14rem;
+    text-align: center;
+    background-color: $tertiary500transparent;
+    cursor: pointer;
 
     @media (min-width: 768px) {
-      width: 60rem;
-      height: 40rem;
-    }
-  }
-
-  .text2 {
-    margin-bottom: $marginBottomMobile;
-    text-align: justify;
-  }
-
-  .telephoneContainer {
-    width: 100%;
-    text-align: right;
-    color: $fontColorDark;
-
-    .telephone {
-      margin-left: 0.5rem;
-      text-decoration: underline;
+      width: 22rem;
+      height: 18rem;
     }
   }
 }

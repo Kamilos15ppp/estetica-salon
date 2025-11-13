@@ -1,3 +1,4 @@
+export { AcneTherapy } from './AcneTherapy';
 export { AnimationPageWrapper } from './AnimationPageWrapper';
 export { Footer } from './Footer';
 export { Headers } from './Headers';
@@ -8,3 +9,5 @@ export { Navbar } from './Navbar';
 export { PageHeader } from './PageHeader';
 export { PageWrapper } from './PageWrapper';
 export { PhotoGallery } from './PhotoGallery';
+export { TherapyEffect } from './TherapyEffect';
+export { TherapyScheme } from './TherapyScheme';

@@ -34,12 +34,7 @@ const PhotoGallery = ({ images, openImageViewer, setImage }: Props) => {
       key={id}
       onClick={() => handleSelectImg(id)}
     >
-      <Image
-        src={src}
-        alt={alt}
-        layout='fill'
-        style={{ borderRadius: '2rem' }}
-      />
+      <Image src={src} alt={alt} fill={true} style={{ borderRadius: '2rem' }} />
     </motion.div>
   ));
 

@@ -1,0 +1,46 @@
+@use '../variables' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    .paragraph {
+      margin-bottom: 1rem;
+      padding: 0.5rem 0;
+      width: 100%;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .list {
+      margin-bottom: 1rem;
+      padding: 0.5rem 0;
+      padding-left: 1.5rem;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        padding-left: 2rem;
+      }
+
+      .element {
+        margin-bottom: 1rem;
+        padding: 0.5rem 0;
+      }
+    }
+  }
+}
