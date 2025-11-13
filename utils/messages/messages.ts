@@ -153,6 +153,6 @@ export const messages = {
     },
   },
   page: {
-    footer: 'Estetica Patrycja Bukowska - all rights reserved',
+    footer: 'Estetica Patrycja Bukowska Mazur - all rights reserved',
   },
 };
