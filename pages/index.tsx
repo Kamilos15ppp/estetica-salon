@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { messages as M } from '../utils/messages';
 import { AnimationPageWrapper, PageHeader } from '../components';
 
-import woman from '../public/woman.jpg';
+import profile from '../public/profile.jpg';
 
 import styles from '../styles/pages/homepage.module.scss';
 
@@ -16,9 +16,9 @@ const Home: NextPage = () => {
           <p className={styles.text}>{M.homepage.textContent1.part1}</p>
           <div className={styles.image}>
             <Image
-              src={woman}
+              src={profile}
               alt={M.homepage.signature}
-              layout='fill'
+              fill={true}
               style={{ borderRadius: '2rem' }}
             />
           </div>

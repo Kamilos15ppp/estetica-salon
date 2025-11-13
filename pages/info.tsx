@@ -16,7 +16,7 @@ const Info: NextPage = () => {
         <Image
           src={img}
           alt='woman'
-          layout='fill'
+          fill={true}
           style={{ borderRadius: '2rem' }}
         />
       </div>

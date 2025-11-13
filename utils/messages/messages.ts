@@ -13,7 +13,7 @@ export const messages = {
     },
     textContent2:
       'Serdecznie zapraszam Państwa do zapoznania się z pełną ofertą usług.',
-    signature: 'Patrycja Bukowska',
+    signature: 'Patrycja Bukowska-Mazur',
   },
   price: {
     path: '/prices',
